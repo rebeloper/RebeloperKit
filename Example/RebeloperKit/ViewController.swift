@@ -10,15 +10,21 @@ import UIKit
 import RebeloperKit
 
 class ViewController: UIViewController {
-
+    
+    let scrollView = RKScrollView()
+    let scrollViewContainer = RKScrollViewContainer(axis: .vertical, spacing: 10)
+    let scrollViewElement = RKScrollViewElement(height: 1200).withBackground(color: .red)
+    let scrollViewElement2 = RKScrollViewElement(height: 600).withBackground(color: .green)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        view.addScrollView(scrollView,
+                           withSafeArea: .top,
+                           hasStatusBarCover: true,
+                           statusBarBackgroundColor: .purple,
+                           container: scrollViewContainer,
+                           elements: scrollViewElement, scrollViewElement2)
     }
 
 }

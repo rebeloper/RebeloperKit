@@ -16,6 +16,10 @@
 		83973767DA8D3EB0C24C27AB849D0D3B /* Pods-RebeloperKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85686903AC0976EA150C3B097FDC668B /* Pods-RebeloperKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92EF91D99C3EF6DFCF1FD293BB1BFD03 /* RebeloperKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCB17A5A7C3C0A2A93CBD839481D433 /* RebeloperKit-dummy.m */; };
 		C9DAA0BE2292FD8D00098F00 /* RKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DAA0BD2292FD8D00098F00 /* RKLog.swift */; };
+		C9DAA0C32293069100098F00 /* RKScrollViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DAA0C22293069100098F00 /* RKScrollViewUtils.swift */; };
+		C9DAA0C72293072300098F00 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DAA0C62293072300098F00 /* UIView+.swift */; };
+		C9DAA0C9229308BB00098F00 /* RKScrollViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DAA0C8229308BB00098F00 /* RKScrollViewContainer.swift */; };
+		C9DAA0CB2293090B00098F00 /* RKScrollViewElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DAA0CA2293090B00098F00 /* RKScrollViewElement.swift */; };
 		E98873E5343E4AD086CFC717CE1E1CE3 /* Pods-RebeloperKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D33741753BF71188ACECF9248C7920 /* Pods-RebeloperKit_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +62,10 @@
 		B0F922E443E983E3B704C337C57247A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C1075A56D7DC333B420D0DF64543E177 /* Pods-RebeloperKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RebeloperKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C9DAA0BD2292FD8D00098F00 /* RKLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKLog.swift; sourceTree = "<group>"; };
+		C9DAA0C22293069100098F00 /* RKScrollViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKScrollViewUtils.swift; sourceTree = "<group>"; };
+		C9DAA0C62293072300098F00 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		C9DAA0C8229308BB00098F00 /* RKScrollViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKScrollViewContainer.swift; sourceTree = "<group>"; };
+		C9DAA0CA2293090B00098F00 /* RKScrollViewElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKScrollViewElement.swift; sourceTree = "<group>"; };
 		D181F0E407D6FCBC1CB790D725DB3066 /* RebeloperKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RebeloperKit-prefix.pch"; sourceTree = "<group>"; };
 		D50CC89ADDD8636B6AAF5A2220F475F7 /* Pods-RebeloperKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RebeloperKit_Tests.modulemap"; sourceTree = "<group>"; };
 		DE1CE80A3266ED4A2C6E78EB79597795 /* Pods-RebeloperKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RebeloperKit_Example-dummy.m"; sourceTree = "<group>"; };
@@ -184,9 +192,45 @@
 		C9DAA0BF2293008600098F00 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				C9DAA0BD2292FD8D00098F00 /* RKLog.swift */,
+				C9DAA0C4229306FA00098F00 /* Extensions */,
+				C9DAA0C12293064A00098F00 /* RKScrollView */,
+				C9DAA0C0229305C300098F00 /* RKLog */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		C9DAA0C0229305C300098F00 /* RKLog */ = {
+			isa = PBXGroup;
+			children = (
+				C9DAA0BD2292FD8D00098F00 /* RKLog.swift */,
+			);
+			path = RKLog;
+			sourceTree = "<group>";
+		};
+		C9DAA0C12293064A00098F00 /* RKScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C9DAA0C22293069100098F00 /* RKScrollViewUtils.swift */,
+				C9DAA0C8229308BB00098F00 /* RKScrollViewContainer.swift */,
+				C9DAA0CA2293090B00098F00 /* RKScrollViewElement.swift */,
+			);
+			path = RKScrollView;
+			sourceTree = "<group>";
+		};
+		C9DAA0C4229306FA00098F00 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9DAA0C52293070300098F00 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C9DAA0C52293070300098F00 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C9DAA0C62293072300098F00 /* UIView+.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -393,7 +437,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DAA0C9229308BB00098F00 /* RKScrollViewContainer.swift in Sources */,
+				C9DAA0C72293072300098F00 /* UIView+.swift in Sources */,
 				92EF91D99C3EF6DFCF1FD293BB1BFD03 /* RebeloperKit-dummy.m in Sources */,
+				C9DAA0CB2293090B00098F00 /* RKScrollViewElement.swift in Sources */,
+				C9DAA0C32293069100098F00 /* RKScrollViewUtils.swift in Sources */,
 				C9DAA0BE2292FD8D00098F00 /* RKLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +481,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/RebeloperKit/RebeloperKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RebeloperKit/RebeloperKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RebeloperKit/RebeloperKit.modulemap";
 				PRODUCT_MODULE_NAME = RebeloperKit;
@@ -465,7 +513,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RebeloperKit_Example/Pods-RebeloperKit_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RebeloperKit_Example/Pods-RebeloperKit_Example.modulemap";
@@ -499,7 +547,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/RebeloperKit/RebeloperKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RebeloperKit/RebeloperKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RebeloperKit/RebeloperKit.modulemap";
 				PRODUCT_MODULE_NAME = RebeloperKit;
@@ -531,7 +579,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RebeloperKit_Example/Pods-RebeloperKit_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RebeloperKit_Example/Pods-RebeloperKit_Example.modulemap";
@@ -597,7 +645,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -659,7 +707,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -688,7 +736,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RebeloperKit_Tests/Pods-RebeloperKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RebeloperKit_Tests/Pods-RebeloperKit_Tests.modulemap";
@@ -722,7 +770,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RebeloperKit_Tests/Pods-RebeloperKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RebeloperKit_Tests/Pods-RebeloperKit_Tests.modulemap";
