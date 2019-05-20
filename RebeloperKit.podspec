@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RebeloperKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RebeloperKit.'
+  s.summary          = 'RebeloperKit is a set of tools aimed to make your development faster and easier.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'RebeloperKit is a set of tools aimed to make your development faster and easier. It makes iOS development super fast.'
                        DESC
 
   s.homepage         = 'https://github.com/rebeloper/RebeloperKit'
@@ -26,11 +26,15 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rebeloper' => 'therebeloper@gmail.com' }
   s.source           = { :git => 'https://github.com/rebeloper/RebeloperKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://youtube.com/rebeloper'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'RebeloperKit/Classes/**/*'
+  s.source_files = 'Source/**/*.swift'
+  s.swift_version = '5.0'
+  s.platforms = {
+      "ios": "9.0"
+  }
   
   # s.resource_bundles = {
   #   'RebeloperKit' => ['RebeloperKit/Assets/*.png']

@@ -12,10 +12,10 @@
 		16E0DFBC237263BD91A975FB83FEC2F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		35899AD31DEBA492F24864CB0CCFC1FF /* Pods-RebeloperKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9DEB532001D684AC15A284747CCDA /* Pods-RebeloperKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66A20B6919E1F7E574819A38C4744248 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		69A229C03E89716F0D5502ADCE41BAFC /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6076A4E4CEA214C28706D52D74E0E805 /* ReplaceMe.swift */; };
 		7D481CC20A4E891E0C61B7059C618DF6 /* Pods-RebeloperKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1CE80A3266ED4A2C6E78EB79597795 /* Pods-RebeloperKit_Example-dummy.m */; };
 		83973767DA8D3EB0C24C27AB849D0D3B /* Pods-RebeloperKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85686903AC0976EA150C3B097FDC668B /* Pods-RebeloperKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92EF91D99C3EF6DFCF1FD293BB1BFD03 /* RebeloperKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCB17A5A7C3C0A2A93CBD839481D433 /* RebeloperKit-dummy.m */; };
+		C9DAA0BE2292FD8D00098F00 /* RKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DAA0BD2292FD8D00098F00 /* RKLog.swift */; };
 		E98873E5343E4AD086CFC717CE1E1CE3 /* Pods-RebeloperKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D33741753BF71188ACECF9248C7920 /* Pods-RebeloperKit_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -41,31 +41,31 @@
 		0C67F722DFA20CDA53B8584620CF4248 /* RebeloperKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RebeloperKit-umbrella.h"; sourceTree = "<group>"; };
 		11351BB485E1E732C28183DF6B440A42 /* Pods-RebeloperKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RebeloperKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3368D0DF970C44DADF75EFD4CA5D06EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3368D0DF970C44DADF75EFD4CA5D06EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		36C695D90E9773F0E76ABD5F27F4B0CA /* Pods-RebeloperKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RebeloperKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3AA24446E16D27498ADD601D5F7178C1 /* Pods-RebeloperKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RebeloperKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3B8089A77F74776F49F84DCA00864C99 /* Pods-RebeloperKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RebeloperKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		49D33741753BF71188ACECF9248C7920 /* Pods-RebeloperKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RebeloperKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		6076A4E4CEA214C28706D52D74E0E805 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = RebeloperKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		7344A963E0E6C9B4EE51862BF49F1542 /* RebeloperKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RebeloperKit.xcconfig; sourceTree = "<group>"; };
 		85686903AC0976EA150C3B097FDC668B /* Pods-RebeloperKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RebeloperKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		85B8C59E78F5ABE243832BB65B7B1B4C /* RebeloperKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RebeloperKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		85F3B4C5FAC15518B710BBF21073BBF9 /* Pods_RebeloperKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RebeloperKit_Example.framework; path = "Pods-RebeloperKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B8C59E78F5ABE243832BB65B7B1B4C /* RebeloperKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RebeloperKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		85F3B4C5FAC15518B710BBF21073BBF9 /* Pods_RebeloperKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RebeloperKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87585FB5E7313297C2F77FA4F08CCCC1 /* Pods-RebeloperKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RebeloperKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		892B94940B72AD112481E3EB22891405 /* Pods-RebeloperKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RebeloperKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9054462D51713F03D2D1BE8D71AF3B82 /* RebeloperKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RebeloperKit.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9435CD01B7FD62F7F7A510DB562F630 /* Pods-RebeloperKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RebeloperKit_Example-Info.plist"; sourceTree = "<group>"; };
-		B0F922E443E983E3B704C337C57247A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B0F922E443E983E3B704C337C57247A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C1075A56D7DC333B420D0DF64543E177 /* Pods-RebeloperKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RebeloperKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C9DAA0BD2292FD8D00098F00 /* RKLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKLog.swift; sourceTree = "<group>"; };
 		D181F0E407D6FCBC1CB790D725DB3066 /* RebeloperKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RebeloperKit-prefix.pch"; sourceTree = "<group>"; };
 		D50CC89ADDD8636B6AAF5A2220F475F7 /* Pods-RebeloperKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RebeloperKit_Tests.modulemap"; sourceTree = "<group>"; };
 		DE1CE80A3266ED4A2C6E78EB79597795 /* Pods-RebeloperKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RebeloperKit_Example-dummy.m"; sourceTree = "<group>"; };
 		E02B8ACEF3549C79F7F9A8B9468D4138 /* Pods-RebeloperKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RebeloperKit_Example.modulemap"; sourceTree = "<group>"; };
 		E0A9DEB532001D684AC15A284747CCDA /* Pods-RebeloperKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RebeloperKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E3F7D283690A5298DEF0E6F539F3688E /* Pods-RebeloperKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RebeloperKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EABABBF9BCFDA869B078EC7B43FB4569 /* Pods_RebeloperKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RebeloperKit_Tests.framework; path = "Pods-RebeloperKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC2396A90B73326776D30074D7530D28 /* RebeloperKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RebeloperKit.framework; path = RebeloperKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABABBF9BCFDA869B078EC7B43FB4569 /* Pods_RebeloperKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RebeloperKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2396A90B73326776D30074D7530D28 /* RebeloperKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RebeloperKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCB17A5A7C3C0A2A93CBD839481D433 /* RebeloperKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RebeloperKit-dummy.m"; sourceTree = "<group>"; };
 		F86260024AE23BA1157FF750427D80EA /* RebeloperKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RebeloperKit-Info.plist"; sourceTree = "<group>"; };
 		FF6FE4C7655F038704F5E35852C8B290 /* Pods-RebeloperKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RebeloperKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -181,6 +181,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C9DAA0BF2293008600098F00 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C9DAA0BD2292FD8D00098F00 /* RKLog.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +211,7 @@
 		E5EE07784A12FA4562A40F25E25E8EB9 /* RebeloperKit */ = {
 			isa = PBXGroup;
 			children = (
-				6076A4E4CEA214C28706D52D74E0E805 /* ReplaceMe.swift */,
+				C9DAA0BF2293008600098F00 /* Source */,
 				A1B255A714D34672B4EC6FD6888FEBB3 /* Pod */,
 				50B459722BF15EFF5A538DC8A95D486F /* Support Files */,
 			);
@@ -315,6 +323,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					0F25C648B73C3DF872181E8B6667C249 = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -381,7 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92EF91D99C3EF6DFCF1FD293BB1BFD03 /* RebeloperKit-dummy.m in Sources */,
-				69A229C03E89716F0D5502ADCE41BAFC /* ReplaceMe.swift in Sources */,
+				C9DAA0BE2292FD8D00098F00 /* RKLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7344A963E0E6C9B4EE51862BF49F1542 /* RebeloperKit.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -427,7 +441,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -471,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7344A963E0E6C9B4EE51862BF49F1542 /* RebeloperKit.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -491,7 +507,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -586,8 +602,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

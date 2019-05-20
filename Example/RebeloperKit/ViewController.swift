@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RebeloperKit
 
 class ViewController: UIViewController {
 
