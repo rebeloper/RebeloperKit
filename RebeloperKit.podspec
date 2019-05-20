@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RebeloperKit'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'RebeloperKit is a set of tools aimed to make your development faster and easier.'
 
 # This description is used to generate tags and improve search results.
@@ -28,12 +28,12 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/rebeloper/RebeloperKit.git', :tag => s.version.to_s }
   s.social_media_url = 'https://youtube.com/rebeloper'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'Source/**/*.swift'
   s.swift_version = '5.0'
   s.platforms = {
-      "ios": "9.0"
+      "ios": "12.0"
   }
   
   # s.resource_bundles = {
