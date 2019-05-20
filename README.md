@@ -2,7 +2,7 @@
 
 [![CI Status](https://img.shields.io/travis/rebeloper/RebeloperKit.svg?style=flat)](https://travis-ci.org/rebeloper/RebeloperKit)
 [![Version](https://img.shields.io/cocoapods/v/RebeloperKit.svg?style=flat)](https://cocoapods.org/pods/RebeloperKit)
-[![License](https://img.shields.io/cocoapods/l/RebeloperKit.svg?style=flat)](https://cocoapods.org/pods/RebeloperKit)
+[![License](https://img.shields.io/cocoapods/l/RebeloperKit.svg?style=flat)](http://mit-license.org)
 [![Platform](https://img.shields.io/cocoapods/p/RebeloperKit.svg?style=flat)](https://cocoapods.org/pods/RebeloperKit)
 
 ## Example
