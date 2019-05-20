@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RebeloperKit_Example' do
+  pod 'RebeloperKit', :path => '../'
+
+  target 'RebeloperKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
