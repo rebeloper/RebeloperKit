@@ -1,0 +1,16 @@
+PODS:
+  - RebeloperKit (0.1.0)
+
+DEPENDENCIES:
+  - RebeloperKit (from `../`)
+
+EXTERNAL SOURCES:
+  RebeloperKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RebeloperKit: f31bbb151d5fa39c353fde42bf6b98fe44ac7421
+
+PODFILE CHECKSUM: 81e7492216999616de7cf7cec8d54a3cf90b6e2f
+
+COCOAPODS: 1.6.2
