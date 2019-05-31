@@ -13,6 +13,13 @@ public class RKScrollViewElement: UIView {
         super.init(frame: frame)
     }
     
+    public convenience init(size: CGSize, backgroundColor: UIColor = .white) {
+        self.init()
+        setWidth(to: size.width)
+        setHeight(to: size.height)
+        self.backgroundColor = backgroundColor
+    }
+    
     public convenience init(width: CGFloat, height: CGFloat, backgroundColor: UIColor = .white) {
         self.init()
         setWidth(to: width)

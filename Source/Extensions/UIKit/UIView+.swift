@@ -101,7 +101,7 @@ extension UIView {
         return self
     }
     
-    public func addScrollView(_ scrollView: RKScrollView, withSafeArea: RKViewSafeArea = .none, hasStatusBarCover: Bool = false, statusBarBackgroundColor: UIColor = .white, container: RKScrollViewContainer, elements: UIView...) {
+    public func addScrollView(_ scrollView: RKScrollView, withSafeArea: RKViewSafeArea = .none, hasStatusBarCover: Bool = false, statusBarBackgroundColor: UIColor = .white, container: RKScrollViewContainer, elements: [UIView]) {
         addSubview(scrollView)
         scrollView.addSubview(container)
         
@@ -115,6 +115,7 @@ extension UIView {
         elements.forEach { (element) in
             container.addArrangedSubview(element)
         }
+        
     }
     
 }

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     let scrollView = RKScrollView()
     let scrollViewContainer = RKScrollViewContainer(axis: .vertical, spacing: 10)
-    let scrollViewElement = RKScrollViewElement(height: 1200).withBackground(color: .red)
+    let scrollViewElement = RKScrollViewElement(height: 1200)
     let scrollViewElement2 = RKScrollViewElement(height: 600).withBackground(color: .green)
     
     override func viewDidLoad() {
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
                            hasStatusBarCover: true,
                            statusBarBackgroundColor: .purple,
                            container: scrollViewContainer,
-                           elements: scrollViewElement, scrollViewElement2)
+                           elements: [scrollViewElement, scrollViewElement2])
     }
 
 }

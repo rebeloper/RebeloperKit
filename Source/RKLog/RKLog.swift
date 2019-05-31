@@ -31,6 +31,17 @@ public struct Log {
     }
 }
 
+/**
+ Prints in the console.
+ 
+ ## Cases ##
+ ln: A single line
+ success: Success
+ warning: Warning
+ todo: Todo
+ url: URL
+ 
+ */
 public enum log {
     case ln(_: String)
     case success(_: String)

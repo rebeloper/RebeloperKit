@@ -15,6 +15,9 @@
 		7D481CC20A4E891E0C61B7059C618DF6 /* Pods-RebeloperKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1CE80A3266ED4A2C6E78EB79597795 /* Pods-RebeloperKit_Example-dummy.m */; };
 		83973767DA8D3EB0C24C27AB849D0D3B /* Pods-RebeloperKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85686903AC0976EA150C3B097FDC668B /* Pods-RebeloperKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92EF91D99C3EF6DFCF1FD293BB1BFD03 /* RebeloperKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCB17A5A7C3C0A2A93CBD839481D433 /* RebeloperKit-dummy.m */; };
+		C90ED4A922A12AD800F0D2F3 /* RKListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED4A822A12AD800F0D2F3 /* RKListCell.swift */; };
+		C90ED4AB22A12B0400F0D2F3 /* RKListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED4AA22A12B0400F0D2F3 /* RKListController.swift */; };
+		C90ED4AD22A12B2300F0D2F3 /* RKListHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED4AC22A12B2300F0D2F3 /* RKListHeaderController.swift */; };
 		C9DAA0BE2292FD8D00098F00 /* RKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DAA0BD2292FD8D00098F00 /* RKLog.swift */; };
 		C9DAA0C32293069100098F00 /* RKScrollViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DAA0C22293069100098F00 /* RKScrollViewUtils.swift */; };
 		C9DAA0C72293072300098F00 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DAA0C62293072300098F00 /* UIView+.swift */; };
@@ -61,6 +64,9 @@
 		A9435CD01B7FD62F7F7A510DB562F630 /* Pods-RebeloperKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RebeloperKit_Example-Info.plist"; sourceTree = "<group>"; };
 		B0F922E443E983E3B704C337C57247A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C1075A56D7DC333B420D0DF64543E177 /* Pods-RebeloperKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RebeloperKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C90ED4A822A12AD800F0D2F3 /* RKListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKListCell.swift; sourceTree = "<group>"; };
+		C90ED4AA22A12B0400F0D2F3 /* RKListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKListController.swift; sourceTree = "<group>"; };
+		C90ED4AC22A12B2300F0D2F3 /* RKListHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKListHeaderController.swift; sourceTree = "<group>"; };
 		C9DAA0BD2292FD8D00098F00 /* RKLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKLog.swift; sourceTree = "<group>"; };
 		C9DAA0C22293069100098F00 /* RKScrollViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKScrollViewUtils.swift; sourceTree = "<group>"; };
 		C9DAA0C62293072300098F00 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -189,9 +195,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C90ED4A722A12AA600F0D2F3 /* RKList */ = {
+			isa = PBXGroup;
+			children = (
+				C90ED4A822A12AD800F0D2F3 /* RKListCell.swift */,
+				C90ED4AA22A12B0400F0D2F3 /* RKListController.swift */,
+				C90ED4AC22A12B2300F0D2F3 /* RKListHeaderController.swift */,
+			);
+			path = RKList;
+			sourceTree = "<group>";
+		};
 		C9DAA0BF2293008600098F00 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C90ED4A722A12AA600F0D2F3 /* RKList */,
 				C9DAA0C4229306FA00098F00 /* Extensions */,
 				C9DAA0C12293064A00098F00 /* RKScrollView */,
 				C9DAA0C0229305C300098F00 /* RKLog */,
@@ -440,9 +457,12 @@
 				C9DAA0C9229308BB00098F00 /* RKScrollViewContainer.swift in Sources */,
 				C9DAA0C72293072300098F00 /* UIView+.swift in Sources */,
 				92EF91D99C3EF6DFCF1FD293BB1BFD03 /* RebeloperKit-dummy.m in Sources */,
+				C90ED4A922A12AD800F0D2F3 /* RKListCell.swift in Sources */,
 				C9DAA0CB2293090B00098F00 /* RKScrollViewElement.swift in Sources */,
 				C9DAA0C32293069100098F00 /* RKScrollViewUtils.swift in Sources */,
+				C90ED4AB22A12B0400F0D2F3 /* RKListController.swift in Sources */,
 				C9DAA0BE2292FD8D00098F00 /* RKLog.swift in Sources */,
+				C90ED4AD22A12B2300F0D2F3 /* RKListHeaderController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
