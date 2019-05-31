@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RebeloperKit'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'RebeloperKit is a set of tools aimed to make your development faster and easier.'
 
 # This description is used to generate tags and improve search results.
