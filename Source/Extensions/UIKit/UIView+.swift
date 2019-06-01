@@ -8,6 +8,8 @@
 import UIKit
 import Foundation
 
+typealias Spacer = UIView
+
 public enum RKViewSafeArea {
     case top, leading, trailing, bottom, vertical, horizontal, all, none
 }
