@@ -15,11 +15,11 @@ public enum LogDateFormatter: String {
 }
 
 public struct LogOptions {
-    static var dateFormatter = LogDateFormatter.MMM_d_HH_mm_ss_SSSZ
+    public static var dateFormatter = LogDateFormatter.MMM_d_HH_mm_ss_SSSZ
 }
 
 public struct Log {
-    static func stats(_ file: String = #file, function: String = #function, line: Int = #line) -> String {
+    public static func stats(_ file: String = #file, function: String = #function, line: Int = #line) -> String {
         let fileString: NSString = NSString(string: file)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = LogOptions.dateFormatter.rawValue
