@@ -9,7 +9,7 @@ import UIKit
 
 open class RKButton: UIButton {
     
-    public init(title: String, titleColor: UIColor, font: UIFont = .systemFont(ofSize: 14), backgroundColor: UIColor = .clear, cornerRadius: CGFloat = 0, borderWith: CGFloat = 0, borderColor: UIColor = .clear, target: Any? = nil, action: Selector? = nil) {
+    public init(title: String, titleColor: UIColor, font: UIFont = .systemFont(ofSize: 14), backgroundColor: UIColor = .clear, cornerRadius: CGFloat = 0, borderWith: CGFloat = 0, borderColor: UIColor = .clear, tag: Int = 0, target: Any? = nil, action: Selector? = nil) {
         super.init(frame: .zero)
         setTitle(title, for: .normal)
         setTitleColor(titleColor, for: .normal)
@@ -19,12 +19,13 @@ open class RKButton: UIButton {
         layer.borderWidth = borderWith
         layer.borderColor = borderColor.cgColor
         layer.masksToBounds = true
+        self.tag = tag
         if let action = action {
             addTarget(target, action: action, for: .touchUpInside)
         }
     }
     
-    public init(image: UIImage, tintColor: UIColor? = nil, target: Any? = nil, action: Selector? = nil) {
+    public init(image: UIImage, tintColor: UIColor? = nil, tag: Int = 0, target: Any? = nil, action: Selector? = nil) {
         super.init(frame: .zero)
         if tintColor == nil {
             setImage(image.withRenderingMode(.alwaysOriginal), for: .normal)
@@ -32,6 +33,7 @@ open class RKButton: UIButton {
             setImage(image.withRenderingMode(.alwaysTemplate), for: .normal)
             self.tintColor = tintColor
         }
+        self.tag = tag
         if let action = action {
             addTarget(target, action: action, for: .touchUpInside)
         }
