@@ -22,7 +22,6 @@
 		C90ED4B422A162CF00F0D2F3 /* RKIndentedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED4B322A162CF00F0D2F3 /* RKIndentedTextField.swift */; };
 		C90ED4B622A1650200F0D2F3 /* RKMultilineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED4B522A1650200F0D2F3 /* RKMultilineLabel.swift */; };
 		C90ED4B822A1656B00F0D2F3 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED4B722A1656B00F0D2F3 /* UIColor+.swift */; };
-		C90ED4BA22A1661B00F0D2F3 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED4B922A1661B00F0D2F3 /* UIApplication+.swift */; };
 		C90ED4BD22A1668900F0D2F3 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED4BC22A1668900F0D2F3 /* String+.swift */; };
 		C90ED4BF22A166AC00F0D2F3 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED4BE22A166AC00F0D2F3 /* Double+.swift */; };
 		C90ED4C122A1671000F0D2F3 /* RKAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED4C022A1671000F0D2F3 /* RKAlertController.swift */; };
@@ -93,7 +92,6 @@
 		C90ED4B322A162CF00F0D2F3 /* RKIndentedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKIndentedTextField.swift; sourceTree = "<group>"; };
 		C90ED4B522A1650200F0D2F3 /* RKMultilineLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKMultilineLabel.swift; sourceTree = "<group>"; };
 		C90ED4B722A1656B00F0D2F3 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
-		C90ED4B922A1661B00F0D2F3 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		C90ED4BC22A1668900F0D2F3 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		C90ED4BE22A166AC00F0D2F3 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		C90ED4C022A1671000F0D2F3 /* RKAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKAlertController.swift; sourceTree = "<group>"; };
@@ -363,7 +361,6 @@
 			children = (
 				C9DAA0C62293072300098F00 /* UIView+.swift */,
 				C90ED4B722A1656B00F0D2F3 /* UIColor+.swift */,
-				C90ED4B922A1661B00F0D2F3 /* UIApplication+.swift */,
 				C90ED4D822A262E000F0D2F3 /* UIStackView+.swift */,
 				C90ED4DA22A2633100F0D2F3 /* UIViewController+.swift */,
 				C90ED4E022A2647200F0D2F3 /* UILabel+.swift */,
@@ -582,7 +579,6 @@
 				C90ED4DF22A263BE00F0D2F3 /* URL+.swift in Sources */,
 				C9DAA0C9229308BB00098F00 /* RKScrollViewContainer.swift in Sources */,
 				C90ED4B622A1650200F0D2F3 /* RKMultilineLabel.swift in Sources */,
-				C90ED4BA22A1661B00F0D2F3 /* UIApplication+.swift in Sources */,
 				C90ED4B122A1612B00F0D2F3 /* RKLabel.swift in Sources */,
 				C90ED4D122A25BFC00F0D2F3 /* RKDateFormatter.swift in Sources */,
 				C90ED4DB22A2633100F0D2F3 /* UIViewController+.swift in Sources */,
