@@ -38,7 +38,7 @@ open class RKButton: UIButton {
         layer.borderWidth = borderWith
         layer.borderColor = borderColor.cgColor
         layer.masksToBounds = true
-        self.contentMode = contentMode
+        self.imageView?.contentMode = contentMode
         self.tag = tag
         if let action = action {
             addTarget(target, action: action, for: .touchUpInside)
