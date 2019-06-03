@@ -25,7 +25,7 @@ open class RKButton: UIButton {
         }
     }
     
-    public init(image: UIImage, tintColor: UIColor? = nil, backgroundColor: UIColor = .clear, cornerRadius: CGFloat = 0, borderWith: CGFloat = 0, borderColor: UIColor = .clear, tag: Int = 0, target: Any? = nil, action: Selector? = nil) {
+    public init(image: UIImage, tintColor: UIColor? = nil, backgroundColor: UIColor = .clear, cornerRadius: CGFloat = 0, borderWith: CGFloat = 0, borderColor: UIColor = .clear, contentMode: UIView.ContentMode = .scaleAspectFill, tag: Int = 0, target: Any? = nil, action: Selector? = nil) {
         super.init(frame: .zero)
         if tintColor == nil {
             setImage(image.withRenderingMode(.alwaysOriginal), for: .normal)
