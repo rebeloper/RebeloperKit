@@ -34,8 +34,8 @@ extension UIViewController {
         return (self.tabBarController?.tabBar.frame.origin.y ?? 0) < self.view.frame.maxY
     }
     
-    public func presentInNavController(animated: Bool = false, completion: (() -> Void)? = nil) {
-        let navController = UINavigationController(rootViewController: self)
+    public func presentInNavController(viewController: UIViewController, animated: Bool = false, completion: (() -> Void)? = nil) {
+        let navController = UINavigationController(rootViewController: viewController)
         self.present(navController, animated: animated, completion: completion)
     }
 }
