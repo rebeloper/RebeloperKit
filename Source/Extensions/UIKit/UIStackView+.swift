@@ -9,11 +9,13 @@ import UIKit
 
 extension UIStackView {
     
-    public func addBackground(color: UIColor) {
+    @discardableResult
+    public func addBackground(color: UIColor) -> UIStackView {
         let subview = UIView(frame: bounds)
         subview.backgroundColor = color
         subview.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         insertSubview(subview, at: 0)
+        return self
     }
     
 }

@@ -15,27 +15,27 @@ public class RKScrollViewElement: UIView {
     
     public convenience init(size: CGSize, backgroundColor: UIColor = .white) {
         self.init()
-        setWidth(to: size.width)
-        setHeight(to: size.height)
+        withWidth(size.width)
+        withHeight(size.height)
         self.backgroundColor = backgroundColor
     }
     
     public convenience init(width: CGFloat, height: CGFloat, backgroundColor: UIColor = .white) {
         self.init()
-        setWidth(to: width)
-        setHeight(to: height)
+        withWidth(width)
+        withHeight(height)
         self.backgroundColor = backgroundColor
     }
     
     public convenience init(width: CGFloat, backgroundColor: UIColor = .white) {
         self.init()
-        setWidth(to: width)
+        withWidth(width)
         self.backgroundColor = backgroundColor
     }
     
     public convenience init(height: CGFloat, backgroundColor: UIColor = .white) {
         self.init()
-        setHeight(to: height)
+        withHeight(height)
         self.backgroundColor = backgroundColor
     }
     

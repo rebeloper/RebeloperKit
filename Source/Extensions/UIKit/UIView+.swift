@@ -16,7 +16,8 @@ public enum RKViewSafeArea {
 
 extension UIView {
     
-    public func edgeTo(_ view: UIView, safeArea: RKViewSafeArea = .none) {
+    @discardableResult
+    public func edgeTo(_ view: UIView, safeArea: RKViewSafeArea = .none) -> UIView {
         translatesAutoresizingMaskIntoConstraints = false
         
         switch safeArea {
@@ -61,17 +62,7 @@ extension UIView {
             trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
             bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         }
-        
-    }
-    
-    public func setHeight(to height: CGFloat) {
-        translatesAutoresizingMaskIntoConstraints = false
-        heightAnchor.constraint(equalToConstant: height).isActive = true
-    }
-    
-    public func setWidth(to width: CGFloat) {
-        translatesAutoresizingMaskIntoConstraints = false
-        widthAnchor.constraint(equalToConstant: width).isActive = true
+        return self
     }
     
     @discardableResult
@@ -104,7 +95,8 @@ extension UIView {
         return self
     }
     
-    public func addScrollView(_ scrollView: RKScrollView, withSafeArea: RKViewSafeArea = .none, hasStatusBarCover: Bool = false, statusBarBackgroundColor: UIColor = .white, container: RKScrollViewContainer, elements: [UIView]) {
+    @discardableResult
+    public func addScrollView(_ scrollView: RKScrollView, withSafeArea: RKViewSafeArea = .none, hasStatusBarCover: Bool = false, statusBarBackgroundColor: UIColor = .white, container: RKScrollViewContainer, elements: [UIView]) -> UIView {
         addSubview(scrollView)
         scrollView.addSubview(container)
         
@@ -119,14 +111,15 @@ extension UIView {
             container.addArrangedSubview(element)
         }
         
+        return self
     }
     
     @discardableResult
-    open func withSize<T: UIView>(_ size: CGSize) -> T {
+    open func withSize(_ size: CGSize) -> UIView {
         translatesAutoresizingMaskIntoConstraints = false
         widthAnchor.constraint(equalToConstant: size.width).isActive = true
         heightAnchor.constraint(equalToConstant: size.height).isActive = true
-        return self as! T
+        return self
     }
     
     @discardableResult
