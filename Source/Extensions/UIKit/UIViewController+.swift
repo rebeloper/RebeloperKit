@@ -33,5 +33,10 @@ extension UIViewController {
     public var isTabBarVisible: Bool {
         return (self.tabBarController?.tabBar.frame.origin.y ?? 0) < self.view.frame.maxY
     }
+    
+    public func presentInNavController(animated: Bool = false, completion: (() -> Void)? = nil) {
+        let navController = UINavigationController(rootViewController: self)
+        self.present(navController, animated: animated, completion: completion)
+    }
 }
 
