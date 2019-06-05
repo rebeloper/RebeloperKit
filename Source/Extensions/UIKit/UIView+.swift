@@ -8,12 +8,6 @@
 import UIKit
 import Foundation
 
-public typealias Spacer = UIView
-
-public enum RKViewSafeArea {
-    case top, leading, trailing, bottom, vertical, horizontal, all, none
-}
-
 extension UIView {
     
     fileprivate func RKStack(_ axis: NSLayoutConstraint.Axis = .vertical, views: [UIView], spacing: CGFloat = 0, alignment: UIStackView.Alignment = .fill, distribution: UIStackView.Distribution = .fill) -> UIStackView {
