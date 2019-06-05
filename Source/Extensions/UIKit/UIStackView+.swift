@@ -33,7 +33,7 @@ extension UIStackView {
 extension UIStackView {
     
     @discardableResult
-    open func pad(_ margins: [RKPadding], amount: CGFloat) -> UIStackView {
+    open func pad(_ margins: RKPadding..., amount: CGFloat) -> UIStackView {
         isLayoutMarginsRelativeArrangement = true
         
         margins.forEach { (padding) in
