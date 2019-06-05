@@ -16,6 +16,30 @@ public enum RKViewSafeArea {
 
 extension UIView {
     
+    fileprivate func RKStack(_ axis: NSLayoutConstraint.Axis = .vertical, views: [UIView], spacing: CGFloat = 0, alignment: UIStackView.Alignment = .fill, distribution: UIStackView.Distribution = .fill) -> UIStackView {
+        let stackView = UIStackView(arrangedSubviews: views)
+        stackView.axis = axis
+        stackView.spacing = spacing
+        stackView.alignment = alignment
+        stackView.distribution = distribution
+        addSubview(stackView)
+        stackView.edgeTo(self)
+        return stackView
+    }
+    
+    @discardableResult
+    open func RKvStack(_ views: UIView..., spacing: CGFloat = 0, alignment: UIStackView.Alignment = .fill, distribution: UIStackView.Distribution = .fill) -> UIStackView {
+        return RKStack(.vertical, views: views, spacing: spacing, alignment: alignment, distribution: distribution)
+    }
+    
+    @discardableResult
+    open func RKhStack(_ views: UIView..., spacing: CGFloat = 0, alignment: UIStackView.Alignment = .fill, distribution: UIStackView.Distribution = .fill) -> UIStackView {
+        return RKStack(.horizontal, views: views, spacing: spacing, alignment: alignment, distribution: distribution)
+    }
+}
+
+extension UIView {
+    
     @discardableResult
     public func edgeTo(_ view: UIView, safeArea: RKViewSafeArea = .none) -> UIView {
         translatesAutoresizingMaskIntoConstraints = false
