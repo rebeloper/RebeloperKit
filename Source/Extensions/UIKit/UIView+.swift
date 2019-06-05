@@ -10,7 +10,7 @@ import Foundation
 
 extension UIView {
     @discardableResult
-    public func debug() -> UIView {
+    public func addDebug() -> UIView {
         let randomColor = UIColor.random
         self.backgroundColor = randomColor.withAlphaComponent(0.3)
         self.addBorder(width: 1, color: randomColor)
