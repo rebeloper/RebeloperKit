@@ -29,7 +29,7 @@ extension UIStackView {
     }
     
     @discardableResult
-    public func debug() -> UIStackView {
+    public func addDebug() -> UIStackView {
         let subview = UIView(frame: bounds)
         let randomColor = UIColor.random
         subview.backgroundColor = randomColor.withAlphaComponent(0.3)
