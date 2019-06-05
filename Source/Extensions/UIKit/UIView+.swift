@@ -174,10 +174,12 @@ extension UIView {
      
      - parameter angle: angle in degrees
      */
-    public func rotate(by angle: CGFloat) {
+    @discardableResult
+    public func rotate(by angle: CGFloat) -> UIView {
         let radians = angle / 180.0 * CGFloat.pi
         let rotation = self.transform.rotated(by: radians)
         self.transform = rotation
+        return self
     }
     
     public func asImage() -> UIImage? {
