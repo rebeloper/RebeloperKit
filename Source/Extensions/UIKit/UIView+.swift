@@ -9,6 +9,17 @@ import UIKit
 import Foundation
 
 extension UIView {
+    @discardableResult
+    public func debug() -> UIView {
+        let randomColor = UIColor.random
+        self.backgroundColor = randomColor.withAlphaComponent(0.3)
+        self.addBorder(width: 1, color: randomColor)
+        self.setCornerRadius(radius: 3)
+        return self
+    }
+}
+
+extension UIView {
     
     fileprivate func RKStack(_ axis: NSLayoutConstraint.Axis = .vertical, views: [UIView], spacing: CGFloat = 0, alignment: UIStackView.Alignment = .fill, distribution: UIStackView.Distribution = .fill) -> UIStackView {
         let stackView = UIStackView(arrangedSubviews: views)
