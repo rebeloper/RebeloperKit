@@ -31,7 +31,7 @@ extension UIStackView {
     @discardableResult
     public func debug() -> UIStackView {
         let subview = UIView(frame: bounds)
-        subview.addBorder(width: 1, color: .red)
+        subview.addBorder(width: 1, color: UIColor.random)
         subview.setCornerRadius(radius: 3)
         subview.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         insertSubview(subview, at: 0)
